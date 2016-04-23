@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 7c74334b41d75f64cb5c359b79516ac0
+timeCreated: 1456078941
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rosie_Train_0
+    21300002: rosie_Train_1
+    21300004: rosie_Train_2
+    21300006: rosie_Train_3
+    21300008: rosie_Train_4
+    21300010: rosie_Train_5
+    21300012: rosie_Train_6
+    21300014: rosie_Train_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: rosie_Train_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1522.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1305.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 871.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 654.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rosie_Train_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.5
+        width: 458
+        height: 217.5
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
