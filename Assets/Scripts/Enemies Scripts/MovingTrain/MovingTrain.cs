@@ -17,7 +17,9 @@ public class MovingTrain : MonoBehaviour
     float groundRadius = 0.1f;
     public LayerMask whatIsGround;
 
+    public AudioClip impact;
     AudioSource movingTrainSound;
+    // public bool stopTrainSound = false;
 
 
     void Awake()
@@ -31,7 +33,7 @@ public class MovingTrain : MonoBehaviour
         Move();                  // Call the function created
         ChgDirection();
         // TempChgDirection();
-        movingTrainSound.Play();
+        //movingTrainSound.Play();
     }
 
 
@@ -68,7 +70,7 @@ public class MovingTrain : MonoBehaviour
     {
 
         myMovingTrain.velocity = new Vector2(-transform.localScale.x, 0) * speed;       // The Hand is walking towards the left when start game  :   http://docs.unity3d.com/ScriptReference/Transform-localScale.html ;  http://docs.unity3d.com/ScriptReference/Rigidbody2D-velocity.html
-                                                                                        // myBody.velocity = new Vector2( -1, 0) * speed;
+        movingTrainSound.Play();                                                                               // myBody.velocity = new Vector2( -1, 0) * speed;
     }
 
     //void TempChgDirection() {
@@ -89,12 +91,16 @@ public class MovingTrain : MonoBehaviour
 
 
 
+
+
     void OnCollisionEnter2D(Collision2D target)
     {
         if (target.gameObject.tag == "Player")
         {
-            // Destroy(target.gameObject);   // When Player collide with hand Player would be destroyed or die
+            AudioSource.PlayClipAtPoint(impact, transform.position);
+            Destroy(target.gameObject);   // When Player collide with hand Player would be destroyed or die
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            Destroy(gameObject);
         }
 
         if (target.gameObject.tag == "Blocker" || target.gameObject.tag == "Train" || target.gameObject.tag == "SpringBoard")

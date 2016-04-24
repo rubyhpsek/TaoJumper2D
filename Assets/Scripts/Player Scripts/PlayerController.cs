@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float maxSpeed = 12f;
     Rigidbody2D myrbBody;
@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour {
 
     AudioSource jumpSound;
     AudioSource flipSound;
-    AudioSource laserHitTargetSound;
-      AudioSource pickupGemSound;
+    // AudioSource laserHitTargetSound;
+    //  AudioSource pickupGemSound;
 
 
 
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
         jumpSound = GetComponent<AudioSource>();
         flipSound = GetComponent<AudioSource>();
         // laserHitTargetSound = GetComponent<AudioSource>();
-        // pickupGemSound = GetComponent<AudioSource>();
+        //  pickupGemSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour {
         {
             myrbBody.AddForce(new Vector2(0, jumpForce));
             jumpSound.Play();
-             pickupGemSound.Play();
+            // pickupGemSound.Play();
 
         }
     }
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour {
     {       //  http://docs.unity3d.com/ScriptReference/Collider2D.OnTriggerEnter2D.html :   Set Trigger
         if (target.tag == "Player")
         {
-            laserHitTargetSound.Play();
+            //   laserHitTargetSound.Play();
             Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
 
 

@@ -8,9 +8,12 @@ public class Springy : MonoBehaviour
 
     private Animator anim;
 
+    AudioSource springJumpSound;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
+        springJumpSound = GetComponent<AudioSource>();
 
     }
 
@@ -20,6 +23,7 @@ public class Springy : MonoBehaviour
         anim.Play("SpringUp");
         yield return new WaitForSeconds(0.5f);
         anim.Play("SpringDown");
+        springJumpSound.Play();
 
     }
 

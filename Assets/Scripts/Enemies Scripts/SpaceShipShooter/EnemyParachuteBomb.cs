@@ -3,27 +3,31 @@
 public class EnemyParachuteBomb : MonoBehaviour
 {
 
-
-    // AudioSource laserHitTargetSound;
+    public AudioClip impact;
+    public AudioClip impact2;
+    AudioSource bombExplodeSound;
 
     void Start()
     {
-        // laserHitTargetSound = GetComponent<AudioSource>();
+        bombExplodeSound = GetComponent<AudioSource>();
     }
     void OnTriggerEnter2D(Collider2D target)
     {            //  http://docs.unity3d.com/ScriptReference/Collider2D.OnTriggerEnter2D.html :   Set Trigger 
         if (target.tag == "Player")
         {
-            // laserHitTargetSound.Play();
-            //Destroy(target.gameObject);   // When hit Player or target Destroy Player
+            AudioSource.PlayClipAtPoint(impact, transform.position);
+            Destroy(target.gameObject);   // When hit Player or target Destroy Player
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
-            Destroy(gameObject);     // When hit target, destroy the Bullet itself as well
+            Destroy(gameObject);     // When hit target, destroy the Bomb itself as well
 
         }  // use if conditional statement to check if Bullet would collide with the Player
 
         if (target.tag == "ground")
         {
-            Destroy(gameObject);     // When hit the ground, destroy the Bullet itself as well
+            AudioSource.PlayClipAtPoint(impact2, transform.position);
+            // Destroy(target.gameObject);   // When hit Player or target Destroy Player
+            // GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            Destroy(gameObject);     // When hit target, destroy the Bomb itself as well
 
         }  // use if conditional statement to check if Bullet hit the Ground
     }

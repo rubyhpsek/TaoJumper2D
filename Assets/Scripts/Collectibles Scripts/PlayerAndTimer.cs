@@ -2,7 +2,17 @@
 
 public class PlayerAndTimer : MonoBehaviour
 {
+    public AudioClip impact;
+    AudioSource pickupHudSound;
 
+
+
+    void Start()
+    {
+
+        pickupHudSound = GetComponent<AudioSource>();
+
+    }
     void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "Player")
@@ -23,8 +33,8 @@ public class PlayerAndTimer : MonoBehaviour
 
 
             }
-
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(impact, transform.position);
 
 
 

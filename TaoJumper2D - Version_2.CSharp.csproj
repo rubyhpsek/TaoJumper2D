@@ -71,7 +71,7 @@
     <Compile Include="Assets\Scripts\Camera Control Scripts\CameraFollowCtrl.cs" />
     <Compile Include="Assets\Scripts\Clouds Scripts\CloudCollectPoints.cs" />
     <Compile Include="Assets\Scripts\Clouds Scripts\CloudSpawner.cs" />
-    <Compile Include="Assets\Scripts\Collectibles Scripts\GemScript1.cs" />
+    <Compile Include="Assets\Scripts\Collectibles Scripts\BallScript1.cs" />
     <Compile Include="Assets\Scripts\Collectibles Scripts\GemsScript.cs" />
     <Compile Include="Assets\Scripts\Collectibles Scripts\PlayerAndTimer.cs" />
     <Compile Include="Assets\Scripts\Door Scripts\Door1.cs" />

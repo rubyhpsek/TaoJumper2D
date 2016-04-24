@@ -48,6 +48,9 @@ public class MovingBlocks : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             // Application.LoadLevel("GamePlay");
+            explodeSound.Play();
+            Destroy(other.gameObject);
+            Destroy(gameObject);
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
         }
     }
