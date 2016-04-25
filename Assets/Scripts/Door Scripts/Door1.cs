@@ -52,7 +52,7 @@ public class Door1 : MonoBehaviour
         if (target.tag == "Player")
         {
             //Debug.Log("Game is Finished now");
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
         }
 
     }

@@ -4,6 +4,7 @@ public class MovingBlocks : MonoBehaviour
 {
 
     private float movingBlockSpeed;
+    public AudioClip impact;
     AudioSource explodeSound;
 
     GameManager gm;
@@ -30,10 +31,10 @@ public class MovingBlocks : MonoBehaviour
     {
         if (other.transform.tag == "MovingBlock")
         {
-            explodeSound.Play();
+            AudioSource.PlayClipAtPoint(impact, transform.position);
             gm.AddScore(1);
-            ResetEnemyObject();
             Destroy(other.gameObject);
+            ResetEnemyObject();
         }
 
         //if (gameObject.tag == "Player")
@@ -48,11 +49,14 @@ public class MovingBlocks : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             // Application.LoadLevel("GamePlay");
-            explodeSound.Play();
+            AudioSource.PlayClipAtPoint(impact, transform.position);
             Destroy(other.gameObject);
             Destroy(gameObject);
+            //ResetEnemyObject();
+            // other.transform.position = new Vector2(-8.0f, -0.0f);
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
         }
+        // ResetEnemyObject();
     }
 
     void ResetEnemyObject()

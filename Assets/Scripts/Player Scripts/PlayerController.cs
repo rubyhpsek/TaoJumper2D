@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        ResetPlayerObject();
         myrbBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
@@ -90,13 +91,21 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target)
     {       //  http://docs.unity3d.com/ScriptReference/Collider2D.OnTriggerEnter2D.html :   Set Trigger
-        if (target.tag == "Player")
+        if (target.tag == "Player" || target.tag == "SpaceShip" || target.tag == "Bomb")
         {
             //   laserHitTargetSound.Play();
             Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
 
-
+            ResetPlayerObject();
         }  // use if conditional statement to check if Enemy1  would collide with the Player; the Player would be destroyed
+           // ResetPlayerObject();
+    }
+
+    void ResetPlayerObject()
+    {
+        transform.position = new Vector2(-8.0f, -0.0f);
+        //Vector3 temporary = transform.localScale;
+        //transform.localScale = temporary;
 
     }
 

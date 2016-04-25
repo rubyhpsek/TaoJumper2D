@@ -44,8 +44,8 @@ public class SpaceShipShooter : MonoBehaviour
         {
 
             AudioSource.PlayClipAtPoint(impact, transform.position);
-            Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            //  Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
+            // GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
 
         }  // use if conditional statement to check if Enemy1  would collide with the Player; the Player would be destroyed
 

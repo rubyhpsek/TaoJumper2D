@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class RightBlockers : MonoBehaviour {
+public class RightBlockers : MonoBehaviour
+{
 
     void OnTriggerEnter2D(Collider2D target)
     {
 
         if (target.tag == "Player")
         {
-            Destroy(target.gameObject);
+            // Destroy(target.gameObject);
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
         }
     }
 }

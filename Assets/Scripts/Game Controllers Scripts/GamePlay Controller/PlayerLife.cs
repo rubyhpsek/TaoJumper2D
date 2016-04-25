@@ -33,7 +33,7 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
-            GetComponent<GamePlayController>().PlayerDied();
+            GetComponent<GamePlayController>().PlayerDiedOut();
             Destroy(player);
         }
     }

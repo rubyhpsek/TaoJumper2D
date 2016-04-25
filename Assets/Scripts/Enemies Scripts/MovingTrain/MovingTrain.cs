@@ -21,7 +21,10 @@ public class MovingTrain : MonoBehaviour
     AudioSource movingTrainSound;
     // public bool stopTrainSound = false;
 
-
+    //void Start()
+    //{
+    //    ResetPlayerObject();
+    //}
     void Awake()
     {
         myMovingTrain = GetComponent<Rigidbody2D>();
@@ -99,7 +102,7 @@ public class MovingTrain : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(impact, transform.position);
             Destroy(target.gameObject);   // When Player collide with hand Player would be destroyed or die
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedResetPlayer();
             Destroy(gameObject);
         }
 
@@ -141,6 +144,17 @@ public class MovingTrain : MonoBehaviour
         }    // this if statement check if the movingTrain is not colliding with the Ground , it will change the opposite direction
 
     }
+
+    void ResetEnemyObject()
+    {
+        Vector3 temporary = transform.localScale;
+        transform.localScale = temporary;
+    }
+
+    //void ResetPlayerObject()
+    //{
+    //    transform.position = new Vector2(-8.0f, -0.0f);
+    //}
 
 
 
