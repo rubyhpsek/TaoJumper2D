@@ -14,7 +14,7 @@ public class MovingBlocks : MonoBehaviour
     {
         ResetEnemyObject();
         explodeSound = GetComponent<AudioSource>();
-        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //   gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

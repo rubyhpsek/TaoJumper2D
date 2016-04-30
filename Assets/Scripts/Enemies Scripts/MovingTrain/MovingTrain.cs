@@ -104,6 +104,9 @@ public class MovingTrain : MonoBehaviour
             Destroy(target.gameObject);   // When Player collide with hand Player would be destroyed or die
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedResetPlayer();
             Destroy(gameObject);
+
+            //GameObject soundObject = GameObject.Find("BG-MUSIC");
+            //AudioSource audioSource = soundObject.GetComponent<AudioSource>();
         }
 
         if (target.gameObject.tag == "Blocker" || target.gameObject.tag == "Train" || target.gameObject.tag == "SpringBoard")

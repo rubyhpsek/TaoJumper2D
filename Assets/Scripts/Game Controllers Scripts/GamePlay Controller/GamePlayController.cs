@@ -19,8 +19,11 @@ public class GamePlayController : MonoBehaviour
     {
         Time.timeScale = 0f;
         pausePanel.SetActive(true);
+        GetComponent<AudioSource>();
         resumeGame.onClick.RemoveAllListeners();
         resumeGame.onClick.AddListener(() => ResumeGame());
+
+
     }
     public void GameOver()
     {

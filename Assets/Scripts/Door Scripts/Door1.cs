@@ -53,6 +53,7 @@ public class Door1 : MonoBehaviour
         {
             //Debug.Log("Game is Finished now");
             GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
+            Destroy(target.gameObject);
         }
 
     }

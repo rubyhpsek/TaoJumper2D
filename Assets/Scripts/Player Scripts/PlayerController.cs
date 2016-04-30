@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     AudioSource jumpSound;
     AudioSource flipSound;
+
+
     // AudioSource laserHitTargetSound;
     //  AudioSource pickupGemSound;
 
@@ -63,6 +65,8 @@ public class PlayerController : MonoBehaviour
             // pickupGemSound.Play();
 
         }
+
+
     }
 
     public void SpringPlayerWSpringy(float force)
@@ -95,7 +99,8 @@ public class PlayerController : MonoBehaviour
         {
             //   laserHitTargetSound.Play();
             Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
-
+                                          // GameObject.Find("BG-MUSIC").audio.Stop();
+                                          //  GetComponent<AudioSource>("BG-MUSIC").audio.Stop();
             ResetPlayerObject();
         }  // use if conditional statement to check if Enemy1  would collide with the Player; the Player would be destroyed
            // ResetPlayerObject();
@@ -103,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
     void ResetPlayerObject()
     {
-        transform.position = new Vector2(-8.0f, -0.0f);
+        transform.position = new Vector2(-3.34f, -3.2f);
         //Vector3 temporary = transform.localScale;
         //transform.localScale = temporary;
 
