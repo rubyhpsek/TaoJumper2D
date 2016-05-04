@@ -19,7 +19,7 @@ Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\U
 Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.353 seconds
+- Completed reload, in  0.929 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
