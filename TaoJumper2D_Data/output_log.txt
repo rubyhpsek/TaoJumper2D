@@ -10,6 +10,7 @@ Default GameObject Tag: Dead already registered
 (Filename:  Line: 88)
 
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Platform assembly: C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-master\TaoJumper2D_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-master\TaoJumper2D_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-master\TaoJumper2D_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -20,6 +21,18 @@ Platform assembly: C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-ma
 Loading C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-master\TaoJumper2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\All Unity Final Projects\TaoJumper2D-master\TaoJumper2D-master\TaoJumper2D_Data\Managed\System.Core.dll (this message is harmless)
 - Completed reload, in  0.214 seconds
+=======
+Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\All Unity Projects\TaoJumper2D - Version_2\TaoJumper2D_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.929 seconds
+>>>>>>> 178a879054d961b54daa54c25821b5ead9ced719
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...

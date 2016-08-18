@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 guid: d1cbabba349ed06428292b005c0d1087
 TextureImporter:
+<<<<<<< HEAD
   fileIDToRecycleName:
     21300000: Sprite sheet Clouds_0
     21300002: Sprite sheet Clouds_1
@@ -29,6 +30,9 @@ TextureImporter:
     21300048: Sprite sheet Clouds_24
     21300050: Sprite sheet Clouds_25
     21300052: Sprite sheet Clouds_26
+=======
+  fileIDToRecycleName: {}
+>>>>>>> 178a879054d961b54daa54c25821b5ead9ced719
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
