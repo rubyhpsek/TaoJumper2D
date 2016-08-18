@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 1c9f82e11aa73624b88a2d146b8d6868
+timeCreated: 1448886752
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BestPanel_UI_0
+    21300002: BestPanel_UI_1
+    21300004: BestPanel_UI_2
+    21300006: BestPanel_UI_3
+    21300008: BestPanel_UI_4
+    21300010: BestPanel_UI_5
+    21300012: BestPanel_UI_6
+    21300014: BestPanel_UI_7
+    21300016: BestPanel_UI_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BestPanel_UI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 206.666672
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BestPanel_UI_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 386
+        width: 206.666672
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BestPanel_UI_2
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 386
+        width: 218
+        height: 193
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 21, z: 0, w: 0}
+    - name: BestPanel_UI_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 175
+        height: 193
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 5, y: 24, z: 0, w: 0}
+    - name: BestPanel_UI_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 193
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 11, z: 0, w: 0}
+    - name: BestPanel_UI_5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 193
+        width: 206.666687
+        height: 193
+      alignment: 0
+      pivot: {x: .500000119, y: .5}
+      border: {x: 7, y: 13, z: 17, w: 0}
+    - name: BestPanel_UI_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 189
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BestPanel_UI_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 172
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 6, z: 0, w: 0}
+    - name: BestPanel_UI_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 10
+        width: 205
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 6}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
