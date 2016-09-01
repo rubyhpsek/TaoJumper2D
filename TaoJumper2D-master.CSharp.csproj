@@ -52,11 +52,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -69,10 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Background Music Scripts\Music.cs" />
     <Compile Include="Assets\Scripts\Camera Control Scripts\CameraFollowCtrl.cs" />
-    <Compile Include="Assets\Scripts\Clouds Scripts\CloudCollectPoints.cs" />
-    <Compile Include="Assets\Scripts\Clouds Scripts\CloudSpawner.cs" />
     <Compile Include="Assets\Scripts\Collectibles Scripts\BallScript1.cs" />
     <Compile Include="Assets\Scripts\Collectibles Scripts\GemsScript.cs" />
     <Compile Include="Assets\Scripts\Collectibles Scripts\PlayerAndTimer.cs" />
@@ -94,9 +97,12 @@
     <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\MainMenuCtrller.cs" />
     <Compile Include="Assets\Scripts\LeftBlockers Scripts\LeftBlockers.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\not using Sripts\PlayerCtrl.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\not using Sripts\playerControl.cs" />
     <Compile Include="Assets\Scripts\RightBlockers Scripts\RightBlockers.cs" />
+    <Compile Include="Assets\Scripts\SCRIPTS WIP OR TRIAL\Background Music Scripts\Music.cs" />
+    <Compile Include="Assets\Scripts\SCRIPTS WIP OR TRIAL\Clouds Scripts\CloudCollectPoints.cs" />
+    <Compile Include="Assets\Scripts\SCRIPTS WIP OR TRIAL\Clouds Scripts\CloudSpawner.cs" />
+    <Compile Include="Assets\Scripts\SCRIPTS WIP OR TRIAL\not using Sripts\PlayerCtrl.cs" />
+    <Compile Include="Assets\Scripts\SCRIPTS WIP OR TRIAL\not using Sripts\playerControl.cs" />
     <Compile Include="Assets\Scripts\Springy Scripts\Springy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
