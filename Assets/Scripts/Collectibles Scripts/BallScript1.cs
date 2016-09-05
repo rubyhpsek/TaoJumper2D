@@ -4,6 +4,10 @@ public class BallScript1 : MonoBehaviour
 {
 
 
+    private LevelManager mylevelManager;
+
+    public int ballValue;
+
     public AudioClip impact;
     AudioSource pickupGemSound;
 
@@ -11,6 +15,7 @@ public class BallScript1 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        mylevelManager = FindObjectOfType<LevelManager>();
         if (Door1.instance != null)
         {
 
@@ -26,6 +31,7 @@ public class BallScript1 : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             AudioSource.PlayClipAtPoint(impact, transform.position);
+            mylevelManager.AddBalls(ballValue);
             Destroy(gameObject); // this destroys the collider as well
         }
 

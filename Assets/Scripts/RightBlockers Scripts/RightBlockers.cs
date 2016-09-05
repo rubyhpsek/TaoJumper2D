@@ -3,13 +3,12 @@
 public class RightBlockers : MonoBehaviour
 {
 
-    void OnTriggerEnter2D(Collider2D target)
+    public void OnTriggerEnter2D(Collider2D target)
     {
-
-        if (target.tag == "Player")
+        if (target.gameObject.tag == "Player")
         {
-            // Destroy(target.gameObject);
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
+            Destroy(target.gameObject);
         }
     }
 }

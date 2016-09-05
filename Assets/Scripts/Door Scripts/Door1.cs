@@ -49,12 +49,9 @@ public class Door1 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D target)
     {
 
-        if (target.tag == "Player")
-        {
-            //Debug.Log("Game is Finished now");
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
-            Destroy(target.gameObject);
-        }
+        //Debug.Log("Game is Finished now");
+        GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
+        Destroy(target.gameObject);
 
     }
 

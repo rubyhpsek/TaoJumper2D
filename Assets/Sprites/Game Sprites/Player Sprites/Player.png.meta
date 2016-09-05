@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: f621b770db812d340bf97abded958938
+timeCreated: 1448277922
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player_1_run_0
+    21300002: Player_1_run_1
+    21300004: Player_1_run_2
+    21300006: Player_1_run_3
+    21300008: Player_1_run_4
+    21300010: Player_1_run_5
+    21300012: Player_1_run_6
+    21300014: Player_1_run_7
+    21300016: Player_1_run_8
+    21300018: Player_1_run_9
+    21300020: Player_1_run_10
+    21300022: Player_1_run_11
+    21300024: Player_1_run_12
+    21300026: Player_1_run_13
+    21300028: Player_1_run_14
+    21300030: Player_1_run_15
+    21300032: Player_1_0
+    21300034: Player_1_1
+    21300036: Player_1_2
+    21300038: Player_1_3
+    21300040: Player_1_4
+    21300042: Player_1_5
+    21300044: Player_1_6
+    21300046: Player_1_7
+    21300048: Player_1_8
+    21300050: Player_1_9
+    21300052: Player_1_10
+    21300054: Player_1_11
+    21300056: Player_1_12
+    21300058: Player_1_13
+    21300060: Player_1_14
+    21300062: Player_1_15
+    21300064: Player_0
+    21300066: Player_1
+    21300068: Player_2
+    21300070: Player_3
+    21300072: Player_4
+    21300074: Player_5
+    21300076: Player_6
+    21300078: Player_7
+    21300080: Player_8
+    21300082: Player_9
+    21300084: Player_10
+    21300086: Player_11
+    21300088: Player_12
+    21300090: Player_13
+    21300092: Player_14
+    21300094: Player_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Player_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1812
+        width: 118
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1800
+        width: 109
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_2
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1790
+        width: 101
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_3
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1787
+        width: 99
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_4
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1786
+        width: 110
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_5
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1792
+        width: 118
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_6
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 1809
+        width: 129
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1550
+        width: 135
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_8
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1540
+        width: 126
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_9
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1520
+        width: 117
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_10
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1511
+        width: 104
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_11
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1509
+        width: 96
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_12
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1508
+        width: 104
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_13
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1508
+        width: 110
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_14
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1247
+        width: 121
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_15
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1263
+        width: 120
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

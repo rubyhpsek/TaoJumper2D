@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     bool faceRgt = true;
 
+    public Vector3 respawnPosition;
+
+    public LevelManager mylevelManager;
+
+
     AudioSource jumpSound;
     AudioSource flipSound;
 
@@ -27,9 +32,11 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        ResetPlayerObject();
+        //ResetPlayerObject();
         myrbBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        mylevelManager = FindObjectOfType<LevelManager>();
 
         jumpSound = GetComponent<AudioSource>();
         flipSound = GetComponent<AudioSource>();
@@ -93,25 +100,35 @@ public class PlayerController : MonoBehaviour
         flipSound.Play();
     }
 
-    void OnTriggerEnter2D(Collider2D target)
-    {       //  http://docs.unity3d.com/ScriptReference/Collider2D.OnTriggerEnter2D.html :   Set Trigger
-        if (target.tag == "Player" || target.tag == "SpaceShip" || target.tag == "Bomb")
-        {
-            //   laserHitTargetSound.Play();
-            Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
-                                          // GameObject.Find("BG-MUSIC").audio.Stop();
-                                          //  GetComponent<AudioSource>("BG-MUSIC").audio.Stop();
-            ResetPlayerObject();
-        }  // use if conditional statement to check if Enemy1  would collide with the Player; the Player would be destroyed
-           // ResetPlayerObject();
-    }
+    //void OnTriggerEnter2D(Collider2D target)
+    //{       //  http://docs.unity3d.com/ScriptReference/Collider2D.OnTriggerEnter2D.html :   Set Trigger
+    //    if (target.tag == "Player" || target.tag == "SpaceShip" || target.tag == "Bomb")
+    //    {
+    //        //   laserHitTargetSound.Play();
+    //        Destroy(target.gameObject);   // When  Player collide with the Enemy1 or target it will Destroy Player
+    //                                      // GameObject.Find("BG-MUSIC").audio.Stop();
+    //                                      //  GetComponent<AudioSource>("BG-MUSIC").audio.Stop();
+    //                                      //ResetPlayerObject();
+    //    }
 
-    void ResetPlayerObject()
+
+    //}
+
+
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        transform.position = new Vector2(-3.34f, -3.2f);
-        //Vector3 temporary = transform.localScale;
-        //transform.localScale = temporary;
 
+        if (other.tag == "DeathPlane")
+        {
+            //transform.position = respawnPosition;
+            mylevelManager.Respawn();
+        }
+
+        if (other.tag == "CheckPoint")
+        {
+            respawnPosition = other.transform.position;
+        }
     }
 
 

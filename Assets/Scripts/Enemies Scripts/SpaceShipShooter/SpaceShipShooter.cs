@@ -15,14 +15,14 @@ public class SpaceShipShooter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        bombExplodeSound = GetComponent<AudioSource>();
+       // bombExplodeSound = GetComponent<AudioSource>();
         StartCoroutine(Shoot());   // Call the method here, so that the Enemy1 would be shooting immediately when the game start
         // bombExplodeSound = GetComponent<AudioSource>();
     }
 
     void Awake()
     {
-        //bombExplodeSound = GetComponent<AudioSource>();
+        bombExplodeSound = GetComponent<AudioSource>();
     }
 
 

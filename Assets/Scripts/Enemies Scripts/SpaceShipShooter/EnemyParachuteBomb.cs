@@ -17,7 +17,7 @@ public class EnemyParachuteBomb : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(impact, transform.position);
             Destroy(target.gameObject);   // When hit Player or target Destroy Player
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
             Destroy(gameObject);     // When hit target, destroy the Bomb itself as well
 
         }  // use if conditional statement to check if Bullet would collide with the Player

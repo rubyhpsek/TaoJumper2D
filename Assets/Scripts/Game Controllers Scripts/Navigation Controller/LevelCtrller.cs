@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
+using System.Collections;
 
-public class LevelCtrller : MonoBehaviour
-{
+public class LevelCtrller : MonoBehaviour {
 
-    public void StartGame()
-    {
+	public void StartGame() {
 
-        Application.LoadLevel("GamePlay");  // http://docs.unity3d.com/ScriptReference/Application.LoadLevel.html
+        Application.LoadLevel("MyGame");  // http://docs.unity3d.com/ScriptReference/Application.LoadLevel.html
     }
 
-    public void BackToMenu()
-    {
+    public void BackToMenu()  {
 
         Application.LoadLevel("MyMainMenu");  // http://docs.unity3d.com/ScriptReference/Application.LoadLevel.html
     }

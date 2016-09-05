@@ -46,9 +46,9 @@ public class MovingTrain : MonoBehaviour
     {
         // collision = Physics2D.Linecast(startPosition.position, endPosition.position, 1 <<LayerMask.NameToLayer("Ground"));  // to detect if colliding with the layer with specific name like "Ground"
         grounded = Physics2D.OverlapCircle(endPosition.position, groundRadius, whatIsGround);     // to detect if the endPosition is grounded on the ground
-        Debug.DrawLine(startPosition.position, endPosition.position, Color.yellow);
+        Debug.DrawLine(startPosition.position, endPosition.position, Color.blue);
 
-        Debug.DrawLine(startPosition.position, endPosition.position, Color.red);
+
 
         if (!grounded)
         {
@@ -101,15 +101,15 @@ public class MovingTrain : MonoBehaviour
         if (target.gameObject.tag == "Player")
         {
             AudioSource.PlayClipAtPoint(impact, transform.position);
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
             Destroy(target.gameObject);   // When Player collide with hand Player would be destroyed or die
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedResetPlayer();
-            Destroy(gameObject);
+                                          // Destroy(gameObject);
 
             //GameObject soundObject = GameObject.Find("BG-MUSIC");
             //AudioSource audioSource = soundObject.GetComponent<AudioSource>();
         }
 
-        if (target.gameObject.tag == "Blocker" || target.gameObject.tag == "Train" || target.gameObject.tag == "SpringBoard")
+        if (target.gameObject.tag == "Train" || target.gameObject.tag == "SpringBoard")
         {
             Vector3 temporary = transform.localScale;     //  http://docs.unity3d.com/ScriptReference/Transform-localScale.html
 
@@ -128,9 +128,9 @@ public class MovingTrain : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D target)
+    public void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.gameObject.tag == "Blocker" || target.gameObject.tag == "SpringBoard")
+        if (target.gameObject.tag == "Blocker")
         {
             Vector3 temporary = transform.localScale;     //  http://docs.unity3d.com/ScriptReference/Transform-localScale.html
 
@@ -148,11 +148,11 @@ public class MovingTrain : MonoBehaviour
 
     }
 
-    void ResetEnemyObject()
-    {
-        Vector3 temporary = transform.localScale;
-        transform.localScale = temporary;
-    }
+    //void ResetEnemyObject()
+    // {
+    //    Vector3 temporary = transform.localScale;
+    //    transform.localScale = temporary;
+    //}
 
     //void ResetPlayerObject()
     //{
@@ -164,4 +164,4 @@ public class MovingTrain : MonoBehaviour
 
 
 
-}// handcursorGrabbing  class
+}// MovingTrain class

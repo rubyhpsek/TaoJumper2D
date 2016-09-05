@@ -54,7 +54,7 @@ public class MovingBlocks : MonoBehaviour
             Destroy(gameObject);
             //ResetEnemyObject();
             // other.transform.position = new Vector2(-8.0f, -0.0f);
-            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDied();
+            GameObject.Find("GamePlayController").GetComponent<GamePlayController>().PlayerDiedOut();
         }
         // ResetEnemyObject();
     }

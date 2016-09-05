@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: acb39539dda1d244aa540e46ce6ed123
+timeCreated: 1448927054
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy2TopDown_0
+    21300002: Enemy2TopDown_1
+    21300004: Enemy2TopDown_2
+    21300006: Enemy2TopDown_3
+    21300008: Enemy2TopDown_4
+    21300010: Enemy2TopDown_5
+    21300012: Enemy2TopDown_6
+    21300014: Enemy2TopDown_7
+    21300016: Enemy2TopDown_8
+    21300018: Enemy2TopDown_9
+    21300020: Enemy2TopDown_10
+    21300022: Enemy2TopDown_11
+    21300024: Enemy2TopDown_12
+    21300026: Enemy2TopDown_13
+    21300028: Enemy2TopDown_14
+    21300030: Enemy2TopDown_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy2TopDown_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435.75
+        width: 128
+        height: 145.25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 435.75
+        width: 128
+        height: 145.25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 436
+        width: 128
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 435
+        width: 128
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 167
+        height: 149
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 304
+        width: 163
+        height: 152
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 280
+        width: 138
+        height: 136
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 290.75
+        width: 128
+        height: 145.25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 185
+        width: 143
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_9
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 188
+        width: 152
+        height: 118
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 145.75
+        width: 128
+        height: 145.25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 145.75
+        width: 128
+        height: 145.25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 31
+        width: 133
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: .75
+        width: 128
+        height: 145.25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_14
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 47
+        width: 168
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2TopDown_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: .75
+        width: 128
+        height: 145.25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
