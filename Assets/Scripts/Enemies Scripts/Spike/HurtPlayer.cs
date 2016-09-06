@@ -8,6 +8,9 @@ public class HurtPlayer : MonoBehaviour
 
     public int damageToGive;
 
+    public AudioClip impact;
+    //AudioSource movingTrainSound;
+
     // Use this for initialization
     void Start()
     {
@@ -26,6 +29,7 @@ public class HurtPlayer : MonoBehaviour
         {
 
             mylevelManager.HurtPlayer(damageToGive);
+            AudioSource.PlayClipAtPoint(impact, transform.position);
         }
     }
 }

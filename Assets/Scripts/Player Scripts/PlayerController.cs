@@ -18,12 +18,14 @@ public class PlayerController : MonoBehaviour
     public LevelManager mylevelManager;
 
 
-    AudioSource jumpSound;
-    AudioSource flipSound;
+    public AudioClip impact1;
+    public AudioClip impact2;
+    // AudioSource Explosion;
+
+    // AudioSource flipSound;
 
 
-    // AudioSource laserHitTargetSound;
-    //  AudioSource pickupGemSound;
+
 
 
 
@@ -38,8 +40,8 @@ public class PlayerController : MonoBehaviour
 
         mylevelManager = FindObjectOfType<LevelManager>();
 
-        jumpSound = GetComponent<AudioSource>();
-        flipSound = GetComponent<AudioSource>();
+        // jumpSound = GetComponent<AudioSource>();
+        //   flipSound = GetComponent<AudioSource>();
         // laserHitTargetSound = GetComponent<AudioSource>();
         //  pickupGemSound = GetComponent<AudioSource>();
     }
@@ -68,8 +70,8 @@ public class PlayerController : MonoBehaviour
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
             myrbBody.AddForce(new Vector2(0, jumpForce));
-            jumpSound.Play();
-            // pickupGemSound.Play();
+            //jumpSound.Play();
+            AudioSource.PlayClipAtPoint(impact2, transform.position);
 
         }
 
@@ -97,7 +99,7 @@ public class PlayerController : MonoBehaviour
         Vector3 Scale = transform.localScale;
         Scale.x *= -1;
         transform.localScale = Scale;
-        flipSound.Play();
+        //flipSound.Play();
     }
 
     //void OnTriggerEnter2D(Collider2D target)
@@ -116,12 +118,12 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "DeathPlane")
         {
-            //transform.position = respawnPosition;
+            AudioSource.PlayClipAtPoint(impact1, transform.position);
             mylevelManager.Respawn();
         }
 

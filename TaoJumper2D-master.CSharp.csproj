@@ -97,7 +97,9 @@
     <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 1\TimeLevel.cs" />
     <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 2\GamePlayController2.cs" />
     <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\LevelCtrller.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\LevelCtrller2A.cs" />
     <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\MainMenuCtrller.cs" />
+    <Compile Include="Assets\Scripts\Health Pickup Scripts\HealthPickUp.cs" />
     <Compile Include="Assets\Scripts\LeftBlockers Scripts\LeftBlockers.cs" />
     <Compile Include="Assets\Scripts\LevelManager Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Moving Objects Scripts\MovingObject.cs" />

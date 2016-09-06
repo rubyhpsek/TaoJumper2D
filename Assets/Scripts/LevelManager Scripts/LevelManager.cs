@@ -9,8 +9,17 @@ public class LevelManager : MonoBehaviour
     public PlayerController myPlayer;
 
 
+    // public GameObject deathExplosion;
+    //public AudioClip impact;
+    //AudioSource Explosion;
+
+
+
+
+
 
     public int ballCount;
+    private int ballBonusLifeCount;
 
     public Text ballText;
 
@@ -33,6 +42,12 @@ public class LevelManager : MonoBehaviour
     public int startingLives;
     public int currentLives;
 
+    public GameObject gameOverScreen;
+
+    public AudioSource levelMusic;
+    public AudioSource gameOverMusic;
+    //public AudioClip impact3;
+
     // Use this for initialization
     void Start()
     {
@@ -52,6 +67,9 @@ public class LevelManager : MonoBehaviour
 
     public void Respawn()
     {
+        //levelMusic.Stop();
+        //levelMusic.Play();
+
         currentLives -= 1;
         livesText.text = "Lives x " + currentLives;
         if (currentLives > 0)
@@ -66,12 +84,18 @@ public class LevelManager : MonoBehaviour
         else
         {
             myPlayer.gameObject.SetActive(false);
+            gameOverScreen.SetActive(true);
+            levelMusic.Stop();
+            gameOverMusic.Play();
+
+            //levelMusic.volume = levelMusic.volume / 2f;
         }
     }
 
     public void AddBalls(int ballsToAdd)
     {
         ballCount += ballsToAdd;
+        ballBonusLifeCount += ballsToAdd;
 
         ballText.text = "Balls:  " + ballCount;
     }
@@ -87,53 +111,108 @@ public class LevelManager : MonoBehaviour
             respawning = true;
 
         }
+
+        if (ballBonusLifeCount >= 100)
+        {
+            currentLives += 1;
+            livesText.text = "Lives x " + currentLives;
+            ballBonusLifeCount -= 100;
+        }
+    }
+
+    public void GiveHealth(int healthToGive)
+    {
+        healthCount += healthToGive;
+
+        if (healthCount > maxHealth)
+        {
+            healthCount = maxHealth;
+        }
+        UpdateHeartMeter();
     }
 
     public void UpdateHeartMeter()
     {
         switch (healthCount)
         {
-            case 6:
+            case 12:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartFull;
                 return;
 
-            case 5:
+            case 11:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartHalf;
                 return;
 
-            case 4:
+            case 10:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartEmpty;
                 return;
 
-            case 3:
+            case 9:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartHalf;
                 heart3.sprite = heartEmpty;
                 return;
 
-            case 2:
+            case 8:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartEmpty;
                 heart3.sprite = heartEmpty;
                 return;
 
-            case 1:
+            case 7:
                 heart1.sprite = heartHalf;
                 heart2.sprite = heartEmpty;
                 heart3.sprite = heartEmpty;
                 return;
 
-            case 0:
+            case 6:
                 heart1.sprite = heartEmpty;
                 heart2.sprite = heartEmpty;
                 heart3.sprite = heartEmpty;
                 return;
+            case 5:
+                heart1.sprite = heartFull;
+                heart2.sprite = heartFull;
+                heart3.sprite = heartFull;
+                return;
+
+            case 4:
+                heart1.sprite = heartFull;
+                heart2.sprite = heartFull;
+                heart3.sprite = heartHalf;
+                return;
+
+            case 3:
+                heart1.sprite = heartFull;
+                heart2.sprite = heartFull;
+                heart3.sprite = heartEmpty;
+                return;
+
+            case 2:
+                heart1.sprite = heartFull;
+                heart2.sprite = heartHalf;
+                heart3.sprite = heartEmpty;
+                return;
+
+            case 1:
+                heart1.sprite = heartFull;
+                heart2.sprite = heartEmpty;
+                heart3.sprite = heartEmpty;
+                return;
+
+            case 0:
+                heart1.sprite = heartHalf;
+                heart2.sprite = heartEmpty;
+                heart3.sprite = heartEmpty;
+                return;
+
+
 
             default:
                 heart1.sprite = heartEmpty;
