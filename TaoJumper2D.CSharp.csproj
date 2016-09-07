@@ -18,6 +18,7 @@
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.2.1f1</UnityVersion>
     <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -68,10 +69,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera Control Scripts\CameraFollowControl.cs" />
+    <Compile Include="Assets\Scripts\Camera Control Scripts\CameraFollowCtrl.cs" />
+    <Compile Include="Assets\Scripts\CheckPointsController Scripts\CheckPointController.cs" />
+    <Compile Include="Assets\Scripts\Collectibles Scripts\BallScript1.cs" />
+    <Compile Include="Assets\Scripts\Collectibles Scripts\GemsScript.cs" />
+    <Compile Include="Assets\Scripts\Collectibles Scripts\PlayerAndTimer.cs" />
+    <Compile Include="Assets\Scripts\Collectibles Scripts\RobotLifeAndTimer.cs" />
+    <Compile Include="Assets\Scripts\DestroyOverTime  Scripts\DestroyOverTime.cs" />
+    <Compile Include="Assets\Scripts\Door Scripts\Door1.cs" />
+    <Compile Include="Assets\Scripts\Door Scripts\Door2.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Cardinal Bird Flying\cardinalBirdFlying.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Cubes Rotator\cubesRotator.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Enemy Shooter\enemyLaser1.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Enemy Shooter\enemyShooter1.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Handcursor Grabbing\handCursorGrabbing.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\MovingBlocks\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\MovingBlocks\MovingBlocks.cs" />
     <Compile Include="Assets\Scripts\Enemies Scripts\MovingTrain\MovingTrain.cs" />
     <Compile Include="Assets\Scripts\Enemies Scripts\SpaceShipShooter\EnemyParachuteBomb.cs" />
     <Compile Include="Assets\Scripts\Enemies Scripts\SpaceShipShooter\SpaceShipShooter.cs" />
+    <Compile Include="Assets\Scripts\Enemies Scripts\Spike\HurtPlayer.cs" />
+    <Compile Include="Assets\Scripts\ExtraLife Spin Scripts\ExtraLife.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 1\GamePlayController.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 1\PlayerLife.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 1\RobotLife.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 1\TimeLevel.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\GamePlay Controller\GPC LEVEL 2\GamePlayController2.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\LevelCtrller.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\LevelCtrller2A.cs" />
+    <Compile Include="Assets\Scripts\Game Controllers Scripts\Navigation Controller\MainMenuCtrller.cs" />
+    <Compile Include="Assets\Scripts\Health Pickup Scripts\HealthPickUp.cs" />
+    <Compile Include="Assets\Scripts\LeftBlockers Scripts\LeftBlockers.cs" />
+    <Compile Include="Assets\Scripts\LevelManager Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Moving Objects Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RightBlockers Scripts\RightBlockers.cs" />
+    <Compile Include="Assets\Scripts\Springy Scripts\Springy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Text Files\TestingText.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
